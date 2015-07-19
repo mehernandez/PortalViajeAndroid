@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" android:background="@color/yellow">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="match_parent" android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent" android:background="@drawable/llaves"/>
+        <TextView
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent" android:text="Juan Salvador Mendoza"
+            android:singleLine="false"  android:id="@+id/nombre_viajes_disponibles"/>
+
+       <LinearLayout
+           android:layout_width="match_parent" android:layout_weight="1"
+           android:layout_height="match_parent" android:orientation="vertical">
+           <ImageView
+               android:layout_width="match_parent" android:layout_weight="1"
+               android:layout_height="match_parent" android:background="@drawable/sentido"/>
+           <TextView
+               android:layout_width="match_parent" android:layout_weight="1"
+               android:layout_height="match_parent" android:text="Desde la U"
+               android:textSize="10dp" android:id="@+id/sentido_viajes_disponibles"
+               android:gravity="center"/>
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent" android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent" android:layout_weight="1"
+                android:layout_height="match_parent" android:background="@drawable/reloj"/>
+            <TextView
+                android:layout_width="match_parent" android:layout_weight="1"
+                android:layout_height="match_parent" android:text="11:00 AM" android:id="@+id/hora_viajes_disponibles"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent" android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent" android:layout_weight="1"
+                android:layout_height="match_parent" android:background="@drawable/precio"/>
+            <TextView
+                android:layout_width="match_parent" android:layout_weight="1"
+                android:layout_height="match_parent" android:text="$ 2000" android:id="@+id/precio_viajes_disponibles"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="match_parent" android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent"  android:id="@+id/img_calificacion_viajes_disponibles"
+            />
+        <TextView
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent" android:text="(8)" android:id="@+id/numeroCalificacion_viajes_disponibles"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:background="@drawable/carro"/>
+        <TextView
+            android:layout_width="match_parent" android:layout_weight="0.7"
+            android:layout_height="match_parent" android:text="Descripción" android:id="@+id/descripcion_viajes_disponibles"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent" android:layout_weight="1.4"
+        android:layout_height="match_parent" android:background="@color/green"
+        android:text="Solicitar" android:id="@+id/btn_solicitar_viajes_disponibles"
+        android:layout_margin="20dp"/>
+</LinearLayout>

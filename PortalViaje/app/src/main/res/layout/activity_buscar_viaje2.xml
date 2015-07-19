@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    tools:context="com.equinox.mariohernandez.portalviaje.BuscarViaje2Activity"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_height="match_parent" android:orientation="vertical"
+  android:layout_width="match_parent"
+    android:background="@color/beigue">
+
+    <TextView android:text="Busca tu viaje en dos simples pasos :" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_weight="1"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent" android:layout_weight="1" android:layout_marginLeft="10dp"
+        android:layout_height="match_parent" android:text="1. Planea con anterioridad"/>
+    <Button
+        android:layout_width="match_parent" android:layout_margin="10dp"
+        android:layout_height="match_parent" android:text="Fecha" android:layout_weight="1"
+        android:background="@color/yellow"
+        android:id="@+id/btn_fecha_buscarViaje2"/>
+
+    <Button
+        android:layout_width="match_parent" android:layout_margin="10dp"
+        android:layout_height="match_parent" android:text="Hora" android:layout_weight="1"
+        android:background="@color/yellow" android:id="@+id/btn_hora_buscarViaje2"/>
+
+
+    <TextView
+        android:layout_width="match_parent" android:gravity="center_vertical" android:layout_marginLeft="10dp"
+        android:layout_height="match_parent" android:layout_weight="1" android:text="2. Selección rápida (Salgo en ...)"/>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_weight="1" android:layout_margin="10dp"
+        android:layout_height="match_parent" android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent" android:text="15"
+            android:background="@color/orange" android:id="@+id/btn_15_buscarViaje2"/>
+        <Button
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent" android:text="30"
+            android:background="@color/yellow" android:id="@+id/btn_30_buscarViaje2"/>
+        <Button
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent" android:text="1 hr"
+            android:background="@color/yellow" android:id="@+id/btn_1hr_buscarViaje2"/>
+        <Button
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent" android:text="3 hrs"
+            android:background="@color/yellow" android:id="@+id/btn_3hr_buscarViaje2"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent" android:layout_margin="10dp" android:id="@+id/btnContinuar_buscarViaje2"
+        android:layout_height="match_parent" android:layout_weight="1" android:text="Buscar Viaje"
+        android:background="@color/orange" android:textColor="@color/white"/>
+</LinearLayout>
+
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/beigue"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/date_picker_buscarViaje2"
+        android:visibility="invisible"
+        />
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/beigue"
+        android:id="@+id/time_picker_buscarViaje2"
+        android:visibility="invisible">
+
+    </TimePicker>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Seleccionar"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_seleccionar_buscarViaje2"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

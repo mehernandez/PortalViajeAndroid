@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/pin"/>
+    <TextView
+        android:layout_width="match_parent" android:layout_weight="1" android:gravity="center"
+        android:layout_height="match_parent" android:text="Titulo" android:id="@+id/titulo_ubicaciones"/>
+    <Button
+        android:layout_width="match_parent" android:layout_weight="0.7"
+        android:layout_height="match_parent" android:text="Borrar" android:id="@+id/btn_borrar_ubicaciones"
+        android:background="@color/orange"
+        android:textColor="@color/white" android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="beigue">#ebd69d</color>
+    <color name="orange">#f4931f</color>
+    <color name="white">#f0f0f0</color>
+    <color name="yellow">#fae078</color>
+    <color name="green">#00bf20</color>
+    <color name="blue">#5964ff</color>
+    <color name="red">#fb250d</color>
+    <color name="black">#000000</color>
+</resources>

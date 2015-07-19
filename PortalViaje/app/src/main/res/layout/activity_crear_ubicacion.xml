@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context="com.equinox.mariohernandez.portalviaje.CrearUbicacionActivity"
+    android:background="@color/beigue">
+
+    <TextView android:text="Tienes 2 opciones para crear tu ubicación" android:layout_width="wrap_content"
+        android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent" android:layout_marginLeft="20dp"
+        android:layout_height="match_parent" android:text="Crea tu ubicación :" android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"  android:layout_weight="0.5"
+        android:layout_height="match_parent" android:orientation="horizontal" android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent" android:orientation="vertical" android:layout_marginLeft="10dp" >
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_weight="1.4" android:gravity="center_vertical"
+                android:layout_height="match_parent" android:orientation="horizontal" >
+                <ImageView
+                    android:layout_width="match_parent" android:layout_marginRight="20dp"
+                    android:layout_height="match_parent" android:layout_weight="1"
+                    android:background="@drawable/pin"/>
+                <TextView
+                    android:layout_width="match_parent" android:layout_weight="1"
+                    android:layout_height="match_parent" android:text="Locación" android:gravity="center"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent" android:layout_weight="1"
+                android:layout_height="match_parent" android:text="GPS"
+                android:background="@color/yellow" android:id="@+id/btn_gps_crearUbicacion"/>
+
+            <Button
+                android:layout_width="match_parent" android:layout_weight="1.4"
+                android:layout_height="match_parent" android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_weight="1" android:layout_marginRight="10dp"
+            android:layout_height="match_parent" android:orientation="vertical" android:layout_marginLeft="30dp">
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_weight="1.4" android:gravity="center_vertical"
+                android:layout_height="match_parent" android:orientation="horizontal" >
+                <ImageView
+                    android:layout_width="match_parent" android:layout_marginRight="20dp"
+                    android:layout_height="match_parent" android:layout_weight="1"
+                    android:background="@drawable/mapa"/>
+                <TextView
+                    android:layout_width="match_parent" android:layout_weight="1"
+                    android:layout_height="match_parent" android:text="Dirección"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent" android:singleLine="false" android:layout_weight="1"
+                android:layout_height="match_parent" android:text="cra 1 # 12"
+                android:background="@color/yellow" android:id="@+id/text_direccion_crearUbicacion"/>
+
+            <Button
+                android:layout_width="match_parent" android:layout_marginTop="30dp" android:layout_weight="1.4"
+                android:layout_height="match_parent" android:text="Buscar"
+                android:background="@color/yellow" android:id="@+id/btn_buscar_crearUbicacion"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent" android:layout_marginLeft="20dp" android:layout_weight="1"
+        android:layout_height="match_parent" android:text="Nombra tu ubicación :"/>
+    <EditText
+        android:layout_width="match_parent" android:layout_marginLeft="20dp" android:layout_weight="1"
+        android:layout_height="match_parent" android:text="Nombre de ubicación" android:layout_marginRight="20dp"
+        android:background="@color/yellow" android:id="@+id/text_nombre_crearUbicacion"/>
+
+    <Button
+        android:layout_width="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+        android:layout_height="match_parent" android:text="Crear Ubicación" android:layout_weight="1"
+        android:layout_marginTop="5dp" android:background="@color/orange" android:id="@+id/btn_crear_crearUbicacion"
+        />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context="com.equinox.mariohernandez.portalviaje.BuscarViaje3Activity"
+    android:background="@color/beigue">
+
+    <TextView android:text="Aquí se muestran los resultados de la búsqueda. Puedes solicitar un cupo directamente desde aquí"
+        android:layout_width="match_parent" android:layout_weight="4" android:gravity="center_vertical"
+        android:layout_height="match_parent" android:layout_marginLeft="10dp"/>
+    <ListView
+        android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="match_parent" android:id="@+id/ListViewBuscarViaje"
+        android:choiceMode="none">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.equinox.mariohernandez.portalviaje.CalificacionesActivityFragment"
+    android:gravity="center_horizontal"
+    android:background="@color/beigue">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="match_parent" android:orientation="horizontal"
+        android:paddingLeft="10dp" android:paddingRight="10dp"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/llaves"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tu calificación como pasajero es"
+            android:layout_weight="1" android:gravity="center"
+            android:id="@+id/text_mensaje_calificaciones"/>
+
+        <ImageView
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/calificacion_propia_calificaciones" />
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_weight="1.15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Pasajero"
+            android:id="@+id/btn_pasajero_calificaciones"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@color/yellow"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Conductor"
+            android:id="@+id/btn_conductor_calificaciones"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Califica como pasajero tu viaje con"
+        android:layout_weight="1.1" android:gravity="center_vertical"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewCalificaciones"
+        android:layout_below="@+id/textView18"
+        android:choiceMode="none"
+        android:layout_weight="0.5"/>
+</LinearLayout>

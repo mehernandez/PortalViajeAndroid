@@ -1,0 +1,66 @@
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.equinox.mariohernandez.portalviaje.BuscarViajeFragment"
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    android:background="@color/beigue">
+
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical"
+        android:text="Busca tu viaje en 2 simples pasos :" android:layout_weight="1" android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal" android:layout_weight="1"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/sentido"/>
+        <TextView
+            android:layout_width="match_parent" android:layout_weight="1" android:gravity="center_vertical"
+            android:layout_height="match_parent" android:text="Sentido"/>
+        <Button
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent" android:text="Hacia la U"
+            android:background="@color/orange" android:textColor="@color/white"
+            android:id="@+id/btn_hacia_buscarViaje1"/>
+        <Button
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent" android:text="Desde la U" android:background="@color/white"
+            android:id="@+id/btn_desde_buscarViaje1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent" android:layout_weight="1" android:gravity="center_vertical" android:layout_marginLeft="10dp"
+        android:layout_height="match_parent" android:text="Escoge tu ubicación adecuada"/>
+    <Button
+        android:layout_width="match_parent" android:layout_weight="1" android:layout_margin="10dp"
+        android:layout_height="match_parent" android:text="Ubicación" android:id="@+id/btn_ubicacion_buscarViaje1"
+        android:background="@color/yellow"/>
+    <TextView
+        android:layout_width="match_parent" android:layout_weight="1" android:gravity="center_vertical" android:layout_marginLeft="10dp"
+        android:layout_height="match_parent" android:text="Escoge el número de cupos :"/>
+    <Button
+        android:layout_width="match_parent" android:layout_weight="1" android:text="Cupos" android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        android:background="@color/yellow"
+        android:id="@+id/btn_cupos_buscarViaje1"/>
+    <Button android:id="@+id/btn_continuar_buscarViaje1"
+        android:layout_width="match_parent" android:layout_weight="1" android:text="Continuar"
+        android:layout_height="match_parent" android:layout_margin="10dp"
+        android:background="@color/orange" android:textColor="@color/white"
+        />
+</LinearLayout>
+    <NumberPicker
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:visibility="invisible"
+        android:background="@color/beigue"
+        android:id="@+id/number_picker_buscarViaje1"
+        />
+</RelativeLayout>

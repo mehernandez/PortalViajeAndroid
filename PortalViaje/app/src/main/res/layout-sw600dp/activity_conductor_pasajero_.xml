@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent" >
+
+<fragment
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:id="@+id/fragment_conductor_pasajero"
+    android:name="com.equinox.mariohernandez.portalviaje.Conductor_pasajero_ActivityFragment"
+    />
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:id="@+id/fragment_configuracion"
+        android:name="com.equinox.mariohernandez.portalviaje.ConfiguracionActivityFragment"
+        />
+    </LinearLayout>

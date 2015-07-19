@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical" android:background="@color/beigue"
+    tools:context="com.equinox.mariohernandez.portalviaje.ConfiguracionActivityFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Escoge el medio de comunicación por el cual deseas ser contactado para cuadrar los detalles de tus viajes"
+        android:layout_weight="1"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="match_parent" android:layout_weight="1">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="WhatsApp"
+            android:id="@+id/btn_whatsapp_configuracion"
+            android:layout_weight="1"
+            android:background="@color/white"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Celular"
+            android:id="@+id/btn_celular_configuracion"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Mail"
+            android:id="@+id/btn_mail_configuracion"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent" android:orientation="horizontal"
+    android:layout_height="match_parent" android:layout_weight="0.9">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Deseo mostrar mi información de contacto antes de que me acepten o acepte una oferta de viaje"
+        android:layout_weight="0.2" android:gravity="center_vertical"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/check_mostrarInfo_configuracion"
+        android:checked="false" android:layout_weight="1"
+        />
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Escoge el tipo de notificaciones que quieres recibir al correo"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="match_parent" android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Oferta nueva"
+            android:layout_weight="1"  android:gravity="center_vertical"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/check_ofertaNueva_configuracion"
+            android:checked="false"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Viaje Cancelado"
+            android:layout_weight="1" android:gravity="center_vertical"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/check_viajeCancelado_configuracion"
+            android:checked="false"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="match_parent" android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Oferta Cancelada"
+            android:layout_weight="1" android:gravity="center_vertical" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/check_ofertaCancelada_configuracion"
+            android:checked="false"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Calificaciones Pendientes"
+            android:layout_weight="1" android:gravity="center_vertical"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/check_calificacionPendiente_configuracion"
+            android:checked="false"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="match_parent" android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Oferta Aceptada"
+            android:layout_weight="1" android:gravity="center_vertical"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/check_ofertaAceptada_configuracion"
+            android:checked="false"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:checked="false"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Numero" android:layout_weight="1"
+        android:gravity="center_vertical"
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/numero_configuracion"
+        android:layout_weight="1"
+        android:background="@color/yellow"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Guardar Información"
+        android:id="@+id/btn_guardar_configuracion"
+         android:layout_weight="1"
+        android:background="@color/orange" android:textColor="@color/white"/>
+
+</LinearLayout>

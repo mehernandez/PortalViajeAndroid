@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context="com.equinox.mariohernandez.portalviaje.UbicacionesFragment"
+    android:background="@color/beigue">
+
+
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:text="Aquí encuentras tus ubicaciones , puedes borrarlas o crearlas"
+        android:layout_weight="4" android:gravity="center" android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:layout_width="match_parent" android:layout_weight="4"
+        android:layout_height="match_parent" android:text="Ubicación"
+        android:textSize="25dp" android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+
+    <ListView
+        android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:choiceMode="none"
+        android:id="@+id/listViewUbicaciones">
+
+    </ListView>
+</LinearLayout>

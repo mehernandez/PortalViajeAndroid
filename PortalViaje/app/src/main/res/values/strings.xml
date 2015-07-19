@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PortalViaje</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_conductor_pasajero_">Conductor_pasajero_Activity</string>
+    <string name="title_activity_inicial">InicialActivity</string>
+    <string name="title_activity_configuracion">ConfiguracionActivity</string>
+    <string name="title_activity_calificaciones">CalificacionesActivity</string>
+    <string name="title_activity_pasajero">PasajeroActivity</string>
+    <string name="title_activity_tab">TabActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_crear_ubicacion">CrearUbicacionActivity</string>
+    <string name="title_activity_buscar_viaje2">BuscarViaje2Activity</string>
+    <string name="title_activity_buscar_viaje3">BuscarViaje3Activity</string>
+    <string name="title_activity_crear_ubicacion_map">Escoge tu ubicación</string>
+    <string name="title_activity_chat">ChatActivity</string>
+</resources>

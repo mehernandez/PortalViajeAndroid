@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="match_parent" android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:orientation="vertical"
+            android:layout_height="match_parent" android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent" android:orientation="horizontal"
+                android:layout_height="match_parent" android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent" android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/llaves"/>
+                <TextView
+                    android:layout_width="match_parent" android:layout_weight="1" android:id="@+id/nombre_buscar_viaje"
+                    android:layout_height="match_parent" android:text="Juan Salvador Mendoza" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:orientation="horizontal"
+                android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent" android:layout_weight="1"
+                    android:layout_height="match_parent" android:id="@+id/calif_buscar_viaje3"
+                    />
+                <TextView
+                    android:layout_width="match_parent" android:text="(8)" android:id="@+id/calificacion_buscar_viaje"
+                    android:layout_height="match_parent"  android:layout_weight="1"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent" android:layout_weight="1"
+                android:layout_height="match_parent"  android:id="@+id/contacto_buscar_viaje3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent" android:orientation="vertical"
+            android:layout_height="match_parent" android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_weight="1"
+                android:layout_height="match_parent" android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent" android:orientation="vertical"
+                    android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="match_parent" android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/sentido"/>
+                    <TextView
+                        android:layout_width="match_parent" android:layout_weight="1" android:id="@+id/orientación_buscar_viaje"
+                        android:layout_height="match_parent" android:text="Hacia la Universidad"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent" android:orientation="vertical"
+                    android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="match_parent" android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/reloj"/>
+                    <TextView
+                        android:layout_width="match_parent" android:layout_weight="1" android:id="@+id/hora_buscar_viaje"
+                        android:layout_height="match_parent" android:text="11:00 AM"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent" android:orientation="vertical"
+                    android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="match_parent" android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/precio"/>
+                    <TextView
+                        android:layout_width="match_parent" android:layout_weight="1" android:id="@+id/precio_buscar_viaje"
+                        android:layout_height="match_parent" android:text="$2000"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent" android:orientation="horizontal"
+                android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent" android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:id="@+id/medio_buscar_viaje3"/>
+                <ImageView
+                    android:layout_width="match_parent" android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/carro"/>
+                <TextView
+                    android:layout_width="match_parent" android:layout_weight="1" android:id="@+id/descripcion_buscar_viaje"
+                    android:layout_height="match_parent" android:text="Una ruta supremamente larga , que pereza" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent" android:layout_weight="2" android:layout_margin="20dp"
+        android:layout_height="match_parent" android:text="Solicitar"
+        android:background="@color/green" android:id="@+id/btn_solicitar_buscarViaje3"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

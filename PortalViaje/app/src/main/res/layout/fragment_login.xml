@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+ tools:context=".LoginActivityFragment" android:paddingTop="120dp"
+    android:paddingBottom="120dp" android:paddingLeft="70dp"
+    android:paddingRight="70dp" android:background="@color/beigue">
+
+    <TextView
+        android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="match_parent" android:text="Únete ahora"
+        android:gravity="bottom" android:textSize="25dp" android:textStyle="bold"/>
+
+    <TextView android:text="Usuario" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_weight="1"
+         android:gravity="bottom"
+ />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textEmailAddress"
+        android:id="@+id/usuario"
+        android:ems="10" android:gravity="top"
+        android:text="me.hernandez10" android:layout_weight="1"
+        android:background="@color/yellow" />
+
+    <TextView
+        android:text="Contraseña" android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:gravity="bottom"
+        />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textPassword"
+        android:ems="10" android:gravity="top"
+        android:id="@+id/clave" android:layout_weight="1"
+        android:background="@color/yellow"
+        android:text="max12345"/>
+
+    <TextView
+        android:layout_width="match_parent" android:text="* Ingresa con los datos de tu correo"
+        android:layout_height="match_parent" android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Ingresar"
+        android:id="@+id/btnLogin" android:layout_weight="1"
+        android:gravity="center" android:background="@color/orange"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

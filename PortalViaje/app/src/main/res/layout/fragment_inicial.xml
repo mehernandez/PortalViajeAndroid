@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.equinox.mariohernandez.portalviaje.InicialActivityFragment"
+    android:orientation="vertical" android:background="@color/beigue"
+    android:paddingRight="70dp" android:paddingLeft="70dp" android:paddingTop="90dp" android:paddingBottom="90dp">
+
+    <TextView android:text="Hola ! para empezar a usar nuestro servicio necesitamos unos datos. En caso de que quieras cambiarlos más adelante lo podrás hacer en tu zona de usuario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_weight="0.8" />
+
+    <TextView
+        android:text="Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nombre_inicial" android:layout_weight="1"
+        android:background="@color/yellow"
+         />
+
+    <TextView
+        android:text="Celular"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textPersonName"
+        android:ems="10" android:id="@+id/celular_inicial"
+        android:background="@color/yellow" android:layout_weight="1"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="match_parent" android:layout_weight="1">
+
+        <TextView
+            android:text="Mostrar siempre mi número"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox_inicial"
+            android:checked="false" android:layout_weight="2"
+             />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:text="Contactarme vía"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="match_parent" android:layout_weight="0.98">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Celular" android:textSize="10dp"
+            android:id="@+id/btn_celular_inicial"
+            android:background="@color/orange"
+           android:layout_weight="1"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Whatsapp" android:textSize="10dp"
+            android:id="@+id/btn_whatsapp_inicial"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Mail" android:textSize="10dp"
+            android:id="@+id/btn_mail_inicial"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:text="Aceptar términos y condiciones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:textSize="11dp"
+            android:gravity="center"/>
+
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox_inicial2"
+            android:checked="false" android:layout_weight="2"
+            android:gravity="center"
+             />
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Continuar"
+        android:id="@+id/btn_continuar_inicial"
+        android:layout_weight="0.98"
+        android:background="@color/orange"
+         />
+
+</LinearLayout>
