@@ -8,7 +8,7 @@
 
     <TextView android:text="Selecciona el modo en el que vas a viajar :" android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/textView2" android:layout_weight="4"
+        android:id="@+id/textView2" android:layout_weight="7"
         android:textSize="12dp"
         android:gravity="center"
         />
@@ -31,13 +31,12 @@
         android:layout_height="match_parent"
         android:id="@+id/btnPasajero"
         android:layout_weight="1"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
         android:src="@drawable/boton_pasaje"
         android:background="@null"
         android:layout_marginTop="5dp"
         android:scaleType="fitXY"
-
         />
 
 </LinearLayout>
